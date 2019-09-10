@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Steam Shop</string>
+    <string name="choose_country">Choose your country of residence to continue</string>
+    <string name="create_online_shop">Create your free online shop for your business and start selling today. How do you want to manage your shop?</string>
+    <string name="welcome_to_steam_shop">Welcome to steam shop</string>
+    <string name="individual">Individual</string>
+    <string name="business">Business</string>
+    <string name="next">NEXT</string>
 </resources>
