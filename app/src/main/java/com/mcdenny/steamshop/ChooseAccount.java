@@ -3,6 +3,7 @@ package com.mcdenny.steamshop;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -43,6 +44,7 @@ public class ChooseAccount extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_account);
+        setTitle("Choose Shop Account");
 
         ButterKnife.bind(this);
 
@@ -51,7 +53,7 @@ public class ChooseAccount extends AppCompatActivity {
     @OnClick(R.id.individual_cardview)
     public void clickIndividualCardview(){
         cardviewIndividualClicked = true;
-        cardviewBusinessClicked =true;
+        cardviewBusinessClicked =false;
         layoutIndividual.setBackgroundResource(R.drawable.cardview_blue_border);
         layoutBusiness.setBackgroundResource(R.drawable.cardview_white_border);
         imgCheckIndividual.setVisibility(View.VISIBLE);
@@ -79,10 +81,12 @@ public class ChooseAccount extends AppCompatActivity {
     @OnClick(R.id.account_next)
     public void nextButtonClicked(){
         if (cardviewIndividualClicked){
+            startActivity(new Intent(getApplicationContext(), WhatToSellActivity.class));
             Toast.makeText(this, "Individual Account selected", Toast.LENGTH_SHORT).show();
         }
         else if(cardviewBusinessClicked){
             Toast.makeText(this, "Business Account selected", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(), WhatToSellActivity.class));
         }
     }
 }

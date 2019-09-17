@@ -6,4 +6,7 @@
     <string name="individual">Individual</string>
     <string name="business">Business</string>
     <string name="next">NEXT</string>
+    <string name="what_do_you_sell">What do you want to sell with your online shop</string>
+    <string name="services">Services</string>
+    <string name="goods_and_products">Goods and Products</string>
 </resources>
