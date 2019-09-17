@@ -1,57 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="16dp"
+    android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_weight="2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:text="@string/choose_country"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
         android:gravity="center"
+        android:text="@string/choose_country"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:layout_marginBottom="20dp"/>
-
+        android:textSize="18sp" />
 
 
     <com.hbb20.CountryCodePicker
-        android:layout_weight="6"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:ccp_showFullName="true"
-        app:ccp_showPhoneCode="false"
-        app:ccp_showNameCode="false"
-        app:ccp_textGravity="LEFT"
-        app:ccp_defaultNameCode="UG"
-        app:ccp_defaultLanguage="ENGLISH"
+        android:layout_weight="6"
+        app:ccpDialog_showPhoneCode="false"
         app:ccp_countryPreference="UG, TZ, KE"
-        app:ccpDialog_showPhoneCode="false"/>
+        app:ccp_defaultLanguage="ENGLISH"
+        app:ccp_defaultNameCode="UG"
+        app:ccp_showFullName="true"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false"
+        app:ccp_textGravity="LEFT" />
 
     <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/country_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:padding="10dp"
         android:layout_marginTop="40dp"
-        android:focusable="true"
+        android:layout_marginEnd="30dp"
         android:clickable="true"
-        fancy:fb_focusColor="@android:color/darker_gray"
+        android:focusable="true"
+        android:padding="10dp"
         fancy:fb_borderColor="@color/colorAccent"
         fancy:fb_defaultColor="@color/colorAccent"
+        fancy:fb_disabledBorderColor="@android:color/darker_gray"
         fancy:fb_disabledColor="@android:color/darker_gray"
         fancy:fb_disabledTextColor="@android:color/white"
-        fancy:fb_disabledBorderColor="@android:color/darker_gray"
+        fancy:fb_focusColor="@android:color/darker_gray"
         fancy:fb_iconPaddingLeft="20dp"
         fancy:fb_iconPosition="right"
         fancy:fb_iconResource="@drawable/ic_arrow_right"

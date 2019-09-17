@@ -1,6 +1,7 @@
 package com.mcdenny.steamshop;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,12 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("Choose Country");
-
         ButterKnife.bind(this);
+
     }
 
     @OnClick(R.id.country_next)
     public void buttonClicked(){
         startActivity(new Intent(getApplicationContext(), ChooseAccount.class));
     }
+
 }
