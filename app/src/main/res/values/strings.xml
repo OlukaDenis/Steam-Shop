@@ -15,4 +15,21 @@
     <!--Fragment labels-->
     <string name="fragment_country">Choose Country</string>
     <string name="fragment_account">Choose Account</string>
+    <string name="education">Education</string>
+    <string name="music_amp_entertainment"><![CDATA[Music & Entertainment]]></string>
+    <string name="fashion_amp_beauty"><![CDATA[Fashion & Beauty]]></string>
+    <string name="food_and_accommodation"><![CDATA[Food & Accommodation]]></string>
+    <string name="printing_and_design"><![CDATA[Printing & Design]]></string>
+    <string name="multimedia">Multimedia</string>
+    <string name="events_and_decoration"><![CDATA[Events & Decoration]]></string>
+    <string name="computing_and_ict"><![CDATA[Computing & ICT]]></string>
+    <string name="agriculture">Agriculture</string>
+    <string name="business_and_legal"><![CDATA[Business & Legal]]></string>
+    <string name="security">Security</string>
+    <string name="technical">Technical</string>
+    <string name="real_estate">Real Estate</string>
+    <string name="pick_your_service_category">Pick your service category to continue</string>
+    <string name="transport">Transport</string>
+    <string name="health_and_social_care"><![CDATA[Health & Social Care]]></string>
+    <string name="home_and_office"><![CDATA[Home & Office]]></string>
 </resources>

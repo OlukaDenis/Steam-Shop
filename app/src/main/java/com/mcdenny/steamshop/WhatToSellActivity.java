@@ -3,6 +3,7 @@ package com.mcdenny.steamshop;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -79,6 +80,7 @@ public class WhatToSellActivity extends AppCompatActivity {
     @OnClick(R.id.goods_services_next)
     public void nextButtonClicked(){
         if (cardviewGoodsClicked){
+            startActivity(new Intent(this, ServiceCategories.class));
             Toast.makeText(this, "Goods and Products selected", Toast.LENGTH_SHORT).show();
         }
         else if(cardviewServicesClicked){

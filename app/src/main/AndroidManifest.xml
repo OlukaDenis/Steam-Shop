@@ -11,12 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ServiceCategories"></activity>
         <activity android:name=".WhatToSellActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ChooseAccount" />
         </activity>
-        <activity android:name=".ChooseAccount" >
+        <activity android:name=".ChooseAccount">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
