@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ServiceCategories"></activity>
+        <activity android:name=".ServiceCategories" android:parentActivityName=".WhatToSellActivity"/>
         <activity android:name=".WhatToSellActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

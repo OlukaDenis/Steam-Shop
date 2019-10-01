@@ -80,11 +80,12 @@ public class WhatToSellActivity extends AppCompatActivity {
     @OnClick(R.id.goods_services_next)
     public void nextButtonClicked(){
         if (cardviewGoodsClicked){
-            startActivity(new Intent(this, ServiceCategories.class));
             Toast.makeText(this, "Goods and Products selected", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, ServiceCategories.class));
         }
         else if(cardviewServicesClicked){
             Toast.makeText(this, "Services selected", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, ServiceCategories.class));
         }
     }
 
